@@ -1,5 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - 我的全新 Hugo 网站</title><link>https://casun18.github.io/posts/</link><description>所有文章 | 我的全新 Hugo 网站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 04 Feb 2022 01:46:43 +0800</lastBuildDate><atom:link href="https://casun18.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>First_post</title><link>https://casun18.github.io/posts/first_post/</link><pubDate>Fri, 04 Feb 2022 01:46:43 +0800</pubDate><author>作者</author><guid>https://casun18.github.io/posts/first_post/</guid><description><![CDATA[<h1 id="test">test</h1>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>所有文章 - 我的全新 Hugo 网站</title>
+    <link>https://casun18.github.io/posts/</link>
+    <description>所有文章 | 我的全新 Hugo 网站</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 04 Feb 2022 02:22:52 &#43;0800</lastBuildDate><atom:link href="https://casun18.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Api_gateway_guide</title>
+  <link>https://casun18.github.io/posts/api_gateway_guide/</link>
+  <pubDate>Fri, 04 Feb 2022 02:22:52 &#43;0800</pubDate>
+  <author>casun</author>
+  <guid>https://casun18.github.io/posts/api_gateway_guide/</guid>
+  <description><![CDATA[<p>记录项目的重难点</p>]]></description>
+</item><item>
+  <title>First_post</title>
+  <link>https://casun18.github.io/posts/first_post/</link>
+  <pubDate>Fri, 04 Feb 2022 01:46:43 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://casun18.github.io/posts/first_post/</guid>
+  <description><![CDATA[<h1 id="test">test</h1>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">
 <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">&#34;</span><span class="n">hello</span> <span class="n">world</span><span class="o">);</span>
 
-</code></pre></div>]]></description></item></channel></rss>
+</code></pre></div>]]></description>
+</item></channel>
+</rss>
