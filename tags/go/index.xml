@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>go - 标签 - 我的全新 Hugo 网站</title>
+    <title>go - 标签 - casun&#39;s blog</title>
     <link>https://casun18.github.io/tags/go/</link>
-    <description>go - 标签 - 我的全新 Hugo 网站</description>
+    <description>go - 标签 - casun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 04 Feb 2022 02:22:52 &#43;0800</lastBuildDate><atom:link href="https://casun18.github.io/tags/go/" rel="self" type="application/rss+xml" /><item>
   <title>Api_gateway_guide</title>
   <link>https://casun18.github.io/posts/api_gateway_guide/</link>

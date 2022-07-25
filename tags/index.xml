@@ -1,21 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tags - 标签 - 我的全新 Hugo 网站</title>
+    <title>Tags - 标签 - casun&#39;s blog</title>
     <link>https://casun18.github.io/tags/</link>
-    <description>Tags - 标签 - 我的全新 Hugo 网站</description>
+    <description>Tags - 标签 - casun&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Jul 2022 18:16:37 &#43;0800</lastBuildDate><atom:link href="https://casun18.github.io/tags/" rel="self" type="application/rss+xml" /><item>
   <title>draft</title>
   <link>https://casun18.github.io/tags/draft/</link>
   <pubDate>Mon, 25 Jul 2022 18:16:37 &#43;0800</pubDate>
   <author>作者</author>
   <guid>https://casun18.github.io/tags/draft/</guid>
-  <description><![CDATA[]]></description>
-</item><item>
-  <title>HOT100,数组</title>
-  <link>https://casun18.github.io/tags/hot100%E6%95%B0%E7%BB%84/</link>
-  <pubDate>Mon, 25 Jul 2022 18:16:09 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>https://casun18.github.io/tags/hot100%E6%95%B0%E7%BB%84/</guid>
   <description><![CDATA[]]></description>
 </item><item>
   <title>go</title>
