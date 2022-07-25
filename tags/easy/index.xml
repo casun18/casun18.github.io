@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Easy - 标签 - casun&#39;s blog</title>
+    <link>https://casun18.github.io/tags/easy/</link>
+    <description>Easy - 标签 - casun&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Jul 2022 18:16:09 &#43;0800</lastBuildDate><atom:link href="https://casun18.github.io/tags/easy/" rel="self" type="application/rss+xml" /><item>
+  <title>Hot01</title>
+  <link>https://casun18.github.io/posts/hot01/</link>
+  <pubDate>Mon, 25 Jul 2022 18:16:09 &#43;0800</pubDate>
+  <author>casun</author>
+  <guid>https://casun18.github.io/posts/hot01/</guid>
+  <description><![CDATA[<h4 id="1-两数之和">1. 两数之和</h4>]]></description>
+</item></channel>
+</rss>
