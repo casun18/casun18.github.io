@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title>Hot03 - casun&#39;s blog</title><meta name="author" content=": ">
-<meta name="description" content="" />
-<meta name="keywords" content="draft" /><meta itemprop="name" content="Hot03">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-07-25T18:16:32+08:00" />
+    <title>Hot03 无重复字符的最长子串 - casun&#39;s blog</title><meta name="author" content=": ">
+<meta name="description" content="给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度" />
+<meta name="keywords" content="Mid,字符串" /><meta itemprop="name" content="Hot03 无重复字符的最长子串">
+<meta itemprop="description" content="给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度"><meta itemprop="datePublished" content="2022-07-25T18:16:32+08:00" />
 <meta itemprop="dateModified" content="2022-07-25T18:16:32+08:00" />
-<meta itemprop="wordCount" content="0">
-<meta itemprop="keywords" content="draft," /><meta property="og:title" content="Hot03" />
-<meta property="og:description" content="" />
+<meta itemprop="wordCount" content="427">
+<meta itemprop="keywords" content="Mid,字符串," /><meta property="og:title" content="Hot03 无重复字符的最长子串" />
+<meta property="og:description" content="给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://casun18.github.io/posts/hot03/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-25T18:16:32+08:00" />
 <meta property="article:modified_time" content="2022-07-25T18:16:32+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hot03"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Hot03 无重复字符的最长子串"/>
+<meta name="twitter:description" content="给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度"/>
 <meta name="application-name" content="casun&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="casun&#39;s blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,12 +28,12 @@
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Hot03",
+    "headline": "Hot03 无重复字符的最长子串",
     "inLanguage": "zh-CN",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/casun18.github.io\/posts\/hot03\/"
-    },"genre": "posts","keywords": "draft","wordcount":  0 ,
+    },"genre": "posts","keywords": "Mid, 字符串","wordcount":  427 ,
     "url": "https:\/\/casun18.github.io\/posts\/hot03\/","datePublished": "2022-07-25T18:16:32+08:00","dateModified": "2022-07-25T18:16:32+08:00","publisher": {
       "@type": "Organization",
       "name": "作者"},"author": {
@@ -76,7 +76,10 @@
   <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-        <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Hot03</h1><div class="post-meta">
+        <div class="container"><div class="toc" id="toc-auto">
+      <h2 class="toc-title">目录</h2>
+      <div class="toc-content" id="toc-content-auto"></div>
+    </div><article class="page single"><h1 class="single-title animated flipInX">Hot03 无重复字符的最长子串</h1><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a
   href="/"
   
@@ -91,12 +94,95 @@
     class=" author"
   
   
-><i class="fas fa-user-circle fa-fw"></i>作者</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/draft/"><i class="far fa-folder fa-fw"></i>draft</a></span></div>
+><i class="fas fa-user-circle fa-fw"></i>作者</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/hot100/"><i class="far fa-folder fa-fw"></i>HOT100</a></span></div>
       <div class="post-meta-line"><span title=2022-07-25&#32;18:16:32>
             <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-25" >2022-07-25</time>
-          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 0 字&nbsp;
-        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 0 分钟&nbsp;</div>
-    </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 427 字&nbsp;
+        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+    </div><div class="details toc" id="toc-static" kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fas fa-angle-right"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1题目">1、题目</a></li>
+    <li><a href="#2解析">2、解析</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度</p>
+<h2 id="1题目">1、题目</h2>
+<p><a
+  href="https://leetcode.cn/problems/longest-substring-without-repeating-characters/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>3. 无重复字符的最长子串</a></p>
+<p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度</p>
+<h2 id="2解析">2、解析</h2>
+<p>滑动窗口</p>
+<ul>
+<li>
+<p>我们使用两个指针表示字符串中的某个子串（或窗口）的左右边界，其中左指针代表着上文中「枚举子串的起始位置」，而右指针即为上文中的；</p>
+</li>
+<li>
+<p>在每一步的操作中，我们会将左指针向右移动一格，表示<strong>我们开始枚举下一个字符作为起始位置</strong>，然后我们可以不断地向右移动右指针，但需要保证这两个指针对应的子串中没有重复的字符。在移动结束后，这个子串就对应着 <strong>以左指针开始的，不包含重复字符的最长子串</strong>。我们记录下这个子串的长度；</p>
+</li>
+<li>
+<p>在枚举结束后，我们找到的最长的子串的长度即为答案。</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">lengthOfLongestSubstring</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Character</span><span class="o">,</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
+        <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">1</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">),</span><span class="n">0</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span><span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)))</span> <span class="o">{</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">left</span><span class="o">,</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">))</span> <span class="o">+</span> <span class="n">1</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">),</span><span class="n">i</span><span class="o">);</span>
+            <span class="n">ans</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">ans</span><span class="o">,</span><span class="n">i</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="n">1</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">ans</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">lengthOfLongestSubstring</span><span class="p">(</span><span class="nx">s</span> <span class="kt">string</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">left</span> <span class="o">:=</span> <span class="mi">0</span>
+    <span class="nx">ans</span> <span class="o">:=</span> <span class="mi">0</span>
+    <span class="nx">byteMap</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">byte</span><span class="p">]</span><span class="kt">int</span><span class="p">)</span> 
+    <span class="k">for</span> <span class="nx">i</span><span class="p">,</span><span class="nx">ch</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">s</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="nx">index</span><span class="p">,</span><span class="nx">ok</span> <span class="o">:=</span> <span class="nx">byteMap</span><span class="p">[</span><span class="nb">byte</span><span class="p">(</span><span class="nx">ch</span><span class="p">)];</span><span class="nx">ok</span><span class="p">{</span>
+            <span class="nx">left</span> <span class="p">=</span> <span class="nf">max</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span><span class="nx">index</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">byteMap</span><span class="p">[</span><span class="nb">byte</span><span class="p">(</span><span class="nx">ch</span><span class="p">)]</span> <span class="p">=</span> <span class="nx">i</span>
+        <span class="nx">ans</span> <span class="p">=</span> <span class="nf">max</span><span class="p">(</span><span class="nx">ans</span><span class="p">,</span><span class="nx">i</span> <span class="o">-</span> <span class="nx">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">ans</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">max</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">,</span><span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="nx">a</span> <span class="p">&gt;</span> <span class="nx">b</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">a</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></div></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
@@ -113,13 +199,13 @@
   </div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/draft/">draft</a></section>
+    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mid/">Mid</a>,&nbsp;<a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
     </section>
   </div>
 
-  <div class="post-nav"><a href="/posts/hot02/" class="prev" rel="prev" title="Hot02"><i class="fas fa-angle-left fa-fw"></i>Hot02</a>
+  <div class="post-nav"><a href="/posts/hot02/" class="prev" rel="prev" title="Hot02 两数相加"><i class="fas fa-angle-left fa-fw"></i>Hot02 两数相加</a>
       <a href="/posts/hot04/" class="next" rel="next" title="Hot04">Hot04<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
@@ -133,7 +219,7 @@
       </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
         <i class="fas fa-comment fa-fw"></i>
       </a>
-    </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+    </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
 
 (() => {document.addEventListener('DOMContentLoaded', () => {
     
